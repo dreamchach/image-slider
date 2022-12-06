@@ -5,36 +5,40 @@
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
     <div class="slider-wrap" id="slider-wrap">
         <ul class="list slider" id="slider">
             <li>
-                <img src="./src/image/red.jpeg" />
+                <img src="<%= require('./src/image/red.jpeg') %>" />
             </li>
             <li>
-                <img src="./src/image/orange.jpeg">
+                <img src="<%= require('./src/image/orange.jpeg') %>">
             </li>
             <li>
-                <img src="./src/image/yellow.jpeg">
+                <img src="<%= require('./src/image/yellow.jpeg') %>">
             </li>
             <li>
-                <img src="./src/image/green.jpeg">
+                <img src="<%= require('./src/image/green.jpeg') %>">
             </li>
             <li>
-                <img src="./src/image/blue.jpeg">
+                <img src="<%= require('./src/image/blue.jpeg') %>">
             </li>
             <li>
-                <img src="./src/image/indigo.jpeg">
+                <img src="<%= require('./src/image/indigo.jpeg') %>">
             </li>
             <li>
-                <img src="./src/image/violet.jpeg">
+                <img src="<%= require('./src/image/violet.jpeg') %>">
             </li>
         </ul>
 
-        <div class="btn next" id="next"><i class="fa fa-arrow-right"></i></div>
-        <div class="btn previous" id="previous"><i class="fa fa-arrow-left"></i></div>
+        <div class="btn next" id="next"><span class="fa fa-arrow-right material-symbols-outlined">arrow_right_alt</span>
+        </div>
+        <div class="btn previous" id="previous"><span
+                class="fa fa-arrow-left material-symbols-outlined">arrow_back</span></div>
 
 
         <div class="indicator-wrap" id="indicator-wrap">
@@ -50,8 +54,8 @@
         </div>
 
         <div class="control-wrap play" id="control-wrap">
-            <i class="fa fa-pause" id="pause" data-status="pause"></i>
-            <i class="fa fa-play" id="play" data-status="play"></i>
+            <span class="fa fa-pause material-symbols-outlined" id="pause" data-status="pause">pause</span>
+            <span class="fa fa-play material-symbols-outlined" id="play" data-status="play">play_arrow</span>
         </div>
 
     </div>
